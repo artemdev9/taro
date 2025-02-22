@@ -49,6 +49,34 @@
         rel="stylesheet">
 
     <title>TaroSvet</title>
+
+    <style>
+        .image-container {
+            position: relative;
+            width: 305px;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 50%, -100% 100%)
+        }
+
+        .text-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+    </style>
 </head>
 
 <body>
@@ -191,7 +219,7 @@
                 </picture>
                 <div class="cs-content">
                     <span class="cs-topper">Как я работаю?</span>
-                    <h2 class="cs-title">Глубокий анализ карт,персональный подход.</h2>
+                    <h2 class="cs-title">Глубокий анализ карт, персональный подход.</h2>
                     <p class="cs-text">
                         Я сочетаю классические и интуитивные методы трактовки, чтобы каждое гадание было максимально
                         точным и актуальным для вашей ситуации. Каждая карта несёт уникальное послание, и моя задача –
@@ -216,26 +244,26 @@
             <div class="cs-container">
                 <div class="cs-content">
                     <div class="cs-flex">
-                        <span class="cs-topper">Portfolio</span>
-                        <h2 class="cs-title">Our Gallery</h2>
+                        <span class="cs-topper">Карты знают больше, чем кажется!</span>
+                        <h2 class="cs-title">Популярные расклады</h2>
                     </div>
                     <div class="cs-button-group">
                         <!--When adding extra galleries, copy and paste the button and make data-filter equal to four, then five, etc. Do the same for the corresponding gallery and it's data attribute-->
                         <button class="cs-button" data-filter="one">
-                            Renovations
+                            БЫСТРЫЕ РАСКЛАДЫ
                         </button>
                         <button class="cs-button" data-filter="two">
-                            Sod
+                            ЛЮБОВЬ И ОТНОШЕНИЯ
                         </button>
                         <button class="cs-button" data-filter="three">
-                            Fencing
+                            ФИНАНСЫ, КАРЬЕРА, ПРЕДНАЗНАЧЕНИЕ
                         </button>
                     </div>
                 </div>
                 <!--Gallery 1-->
                 <div class="cs-gallery" data-category="one">
                     <!--Picture 1-->
-                    <picture class="cs-image">
+                    <!-- <picture class="cs-image">
                         <source media="(max-width: 600px)"
                             srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
                         <source media="(min-width: 601px)"
@@ -243,85 +271,59 @@
                         <img loading="lazy" decoding="async"
                             src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg" alt="gallery"
                             width="305" height="400">
-                    </picture>
+                    </picture> -->
+                    <div class="image-container cs-image">
+                        <img src="./assets/images/wheel-of-fortune.png" loading="lazy" decoding="async" alt="gallery">
+                        <div class="text-overlay">Главный посыл от Вселенной. Какой энергии будет наполнен ваш день?
+                        </div>
+                    </div>
                     <!--Picture 2-->
-                    <picture class="cs-image">
-                        <source media="(max-width: 600px)"
-                            srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
-                        <source media="(min-width: 601px)"
-                            srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
-                        <img loading="lazy" decoding="async"
-                            src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg" alt="gallery"
-                            width="305" height="400">
-                    </picture>
+                    <div class="image-container cs-image">
+                        <img src="./assets/images/justice.png" loading="lazy" decoding="async" alt="gallery">
+                        <div class="text-overlay">Краткий ответ на ваш вопрос. Узнайте вероятность развития событий.
+                        </div>
+                    </div>
                     <!--Picture 3-->
-                    <picture class="cs-image">
-                        <source media="(max-width: 600px)"
-                            srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
-                        <source media="(min-width: 601px)"
-                            srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
-                        <img loading="lazy" decoding="async"
-                            src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg" alt="gallery"
-                            width="305" height="400">
-                    </picture>
+                    <div class="image-container cs-image">
+                        <img src="./assets/images/The-High-Priestess.png" loading="lazy" decoding="async" alt="gallery">
+                        <div class="text-overlay">Прошлое – Настоящее – Будущее. Как всё началось, что происходит
+                            сейчас, к чему приведёт?</div>
+                    </div>
                     <!--Picture 4-->
-                    <picture class="cs-image">
-                        <source media="(max-width: 600px)"
-                            srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
-                        <source media="(min-width: 601px)"
-                            srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
-                        <img loading="lazy" decoding="async"
-                            src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg" alt="gallery"
-                            width="305" height="400">
-                    </picture>
+                    <div class="image-container cs-image">
+                        <img src="./assets/images/moon.png" loading="lazy" decoding="async" alt="gallery">
+                        <div class="text-overlay">Что вам мешает и что поможет? Узнайте тайный аспект ситуации.</div>
+                    </div>
                 </div>
                 <!--Gallery 2-->
                 <div class="cs-gallery cs-hidden" data-category="two">
-                    <!--Picture 1-->
-                    <picture class="cs-image">
-                        <source media="(max-width: 600px)"
-                            srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves3.jpg">
-                        <source media="(min-width: 601px)"
-                            srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves3.jpg">
-                        <img loading="lazy" decoding="async"
-                            src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves3.jpg" alt="gallery"
-                            width="305" height="400">
-                    </picture>
+                    <div class="image-container cs-image">
+                        <img src="./assets/images/lovers.png" loading="lazy" decoding="async" alt="gallery">
+                        <div class="text-overlay">Как человек видит вас? Какие эмоции испытывает на самом деле?
+                        </div>
+                    </div>
                     <!--Picture 2-->
-                    <picture class="cs-image">
-                        <source media="(max-width: 600px)"
-                            srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves3.jpg">
-                        <source media="(min-width: 601px)"
-                            srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves3.jpg">
-                        <img loading="lazy" decoding="async"
-                            src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves3.jpg" alt="gallery"
-                            width="305" height="400">
-                    </picture>
+                    <div class="image-container cs-image">
+                        <img src="./assets/images/chariot.png" loading="lazy" decoding="async" alt="gallery">
+                        <div class="text-overlay"> Будете ли вы вместе? Как разовьются события?
+                        </div>
+                    </div>
                     <!--Picture 3-->
-                    <picture class="cs-image">
-                        <source media="(max-width: 600px)"
-                            srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves3.jpg">
-                        <source media="(min-width: 601px)"
-                            srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves3.jpg">
-                        <img loading="lazy" decoding="async"
-                            src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves3.jpg" alt="gallery"
-                            width="305" height="400">
-                    </picture>
+                    <div class="image-container cs-image">
+                        <img src="./assets/images/devil.png" loading="lazy" decoding="async" alt="gallery">
+                        <div class="text-overlay">Есть ли в ваших отношениях кто-то ещё? Где скрытые проблемы?</div>
+                    </div>
+                    <div class="image-container cs-image">
+                        <img src="./assets/images/two-of-cups.png" loading="lazy" decoding="async" alt="gallery">
+                        <div class="text-overlay">Подходите ли вы друг другу? Как лучше выстроить гармонию?</div>
+                    </div>
                     <!--Picture 4-->
-                    <picture class="cs-image">
-                        <source media="(max-width: 600px)"
-                            srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves3.jpg">
-                        <source media="(min-width: 601px)"
-                            srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves3.jpg">
-                        <img loading="lazy" decoding="async"
-                            src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves3.jpg" alt="gallery"
-                            width="305" height="400">
-                    </picture>
+
                 </div>
                 <!--Gallery 3-->
                 <div class="cs-gallery cs-hidden" data-category="three">
                     <!--Picture 1-->
-                    <picture class="cs-image">
+                    <!-- <picture class="cs-image">
                         <source media="(max-width: 600px)"
                             srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
                         <source media="(min-width: 601px)"
@@ -329,37 +331,28 @@
                         <img loading="lazy" decoding="async"
                             src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg" alt="gallery"
                             width="305" height="400">
-                    </picture>
+                    </picture>-->
+                    <div class="image-container cs-image">
+                        <img src="./assets/images/ten-of-pentacles.png" loading="lazy" decoding="async" alt="gallery">
+                        <div class="text-overlay">Что ждёт вас в деньгах и работе? Какие риски и возможности?
+                        </div>
+                    </div>
                     <!--Picture 2-->
-                    <picture class="cs-image">
-                        <source media="(max-width: 600px)"
-                            srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
-                        <source media="(min-width: 601px)"
-                            srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
-                        <img loading="lazy" decoding="async"
-                            src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg" alt="gallery"
-                            width="305" height="400">
-                    </picture>
+                    <div class="image-container cs-image">
+                        <img src="./assets/images/eigth-of-pentacles.png" loading="lazy" decoding="async" alt="gallery">
+                        <div class="text-overlay">Какие перспективы в текущей и новой сфере?</div>
+                    </div>
                     <!--Picture 3-->
-                    <picture class="cs-image">
-                        <source media="(max-width: 600px)"
-                            srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
-                        <source media="(min-width: 601px)"
-                            srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
-                        <img loading="lazy" decoding="async"
-                            src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg" alt="gallery"
-                            width="305" height="400">
-                    </picture>
+                    <div class="image-container cs-image">
+                        <img src="./assets/images/star.png" loading="lazy" decoding="async" alt="gallery">
+                        <div class="text-overlay">Какая ваша сильная сторона? Где ваш путь?</div>
+                    </div>
                     <!--Picture 4-->
-                    <picture class="cs-image">
-                        <source media="(max-width: 600px)"
-                            srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
-                        <source media="(min-width: 601px)"
-                            srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg">
-                        <img loading="lazy" decoding="async"
-                            src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/leaves2.jpg" alt="gallery"
-                            width="305" height="400">
-                    </picture>
+                    <div class="image-container cs-image">
+                        <img src="./assets/images/magician.png" loading="lazy" decoding="async" alt="gallery">
+                        <div class="text-overlay">Какое главное послание карт для вас прямо сейчас?
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
